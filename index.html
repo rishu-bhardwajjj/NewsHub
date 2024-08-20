@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./NEWS-2.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="nav">
+        <div class="logo"><img src="./NEWS-2.png" alt="logo" ></div>
+        <div class="buttons"> 
+            <table>
+                <tr>
+                    <td id="nav_buttons" onclick="onNavItemClick('politics')">Politics</td>
+                    <td id="nav_buttons"onclick="onNavItemClick('finance')">Finance</td>
+                    <td id="nav_buttons"onclick="onNavItemClick('cricket')">Cricket</td>
+                    <td id="nav_buttons"onclick="onNavItemClick('bollywood')">Bollywood</td>
+                    <td id="nav_buttons"onclick="onNavItemClick('science')">Science</td>
+                </tr>
+            </table> </div>
+        <div class="search">
+            <table>
+                <tr>
+                    <td> <input id="textt" type="text"   class="news-input" placeholder="e.g Science"></td>
+                    <td> <button   id="search-button" class="search-button">Search</button></td>
+                </tr>
+            </table>
+           </div>
+        
+    </div>
+    <div class="cards">
+        
+    </div>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+<footer>Created with ❤️ by Rishabh, Abhi, Aditya, Pratik and Shobhit</footer>
+</html>
